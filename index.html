@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .qst
+        {
+            color: blue;
+        }
+        .ans
+        {
+            color:rgb(149, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Functions</h1>
+    <b class="qst">Q1.</b>
+    <b class="ans">Create one function with zero parameter having a console statement.</b> <br><br>
+    <b class="qst">A1.</b> function dummy() <br>
+    { <br>
+            console.log("Hello") <br>
+        } <br>
+        dummy(); <br><br>
+
+    <b class="qst">Q2.</b>
+    <b class="ans">Create one function which takes two values as a parameter and print the sum of them as "sum of 
+        3,4 is 7". </b> <br><br>
+    <b class="qst">A2.</b> function dummy(a,b) <br>
+    { <br>
+            const sum=a+b; <br>
+            console.log("Sum of 3,4 is" +sum); <br>
+        } <br>
+        dummy(3,4); <br> <br>
+
+    <b class="qst">Q3.</b>
+    <b class="ans">Create one arrow function. </b><br><br>
+    <b class="qst">A3.</b> const AddTwoNumbers = (a,b) => <br>
+     { <br>
+        return a+b; <br>
+     }; <br> <br>
+ 
+     <b class="qst">Q4.</b>
+     <b class="ans">Print output: </b> <br><br>
+     <b class="qst">A4.</b> var x=21; <br>
+        var girl= function() <br>
+        { <br>
+            console.log(x); <br>
+            var x=20; <br>
+        }; <br> <br>
+    <b class="qst">Output:</b> Undefined <br><br>
+    
+    <b class="qst">Q5.</b>
+    <b class="ans">Print output: </b><br><br>
+    <b class="qst">A5.</b> var x=21; <br>
+    girl() <br>
+    console.log(x); <br>
+    function girl() <br> 
+    { <br>
+        console.log(x); <br>  
+    var x=20; <br>
+    }; <br> <br>
+    <b class="qst">Output:</b> Undefined <br> 21 <br><br>
+
+<b class="qst">Q6.</b>
+<b class="ans">Print output: </b> <br><br>
+<b class="qst">A6.</b> var x=21; <br>
+ a(); <br>
+ b(); <br>
+   function a() <br>
+   { <br>
+        x=20; <br>
+        console.log(x);   <br>
+   }; <br>
+function b() <br>
+ { <br>
+    x=40; <br>
+    console.log(x); <br>
+}; <br> <br>
+<b class="qst">Output:</b> 20 <br> 40 <br><br>
+
+<b class="qst">Q7.</b>
+<b class="ans">Write a function that accepts parameters n and return factorial of n. </b> <br><br>
+<b class="qst">A7.</b> function factorial(n) <br>
+{ <br>
+    let result = 1; <br>
+    if (n == 0 || n == 1) <br>
+    { <br>
+      return result; <br>
+    } <br>
+    else <br>
+    {  <br>
+      for(var i = n; i >= 1; i--) <br>
+      { <br>
+        result = result * i; <br>
+      } <br>
+      return result; <br>
+    }  <br>
+  } <br>
+  let n = 4; <br>
+  result = factorial(n) <br>
+  console.log("The factorial of " + n + " is " + result); <br>
+
+</body>
+</html>
